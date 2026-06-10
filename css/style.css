@@ -41,6 +41,11 @@ h1{font-size:42px;margin:6px 0 6px;letter-spacing:-0.02em}
 .footer .weather-emoji{font-size:28px;flex:0 0 42px}
 .footer .weather-details .temp{font-size:16px}
 .footer .weather-note{margin-top:6px;font-size:12px}
+
+/* footer layout replacements for removed inline styles */
+.footer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.footer-meta{color:var(--muted)}
+.footer-weather{margin-top:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
 .card h3{margin:0 0 6px}
 .footer{padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
