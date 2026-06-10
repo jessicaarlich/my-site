@@ -14,21 +14,39 @@ body{
   color:#e6eef6; -webkit-font-smoothing:antialiased;
 }
 .container{max-width:900px;margin:0 auto;padding:48px 20px}
-.topnav{display:flex;gap:18px;justify-content:center;margin-bottom:18px}
-.topnav a{color:var(--muted);text-decoration:none;font-weight:600}
-.hero{padding:80px 0 40px; text-align:center}
-.hero .avatar{width:120px;height:120px;margin:0 auto 18px;filter:drop-shadow(0 8px 20px rgba(10,10,20,0.6))}
+.topnav{background:transparent;padding:18px 0}
+.topnav .container{display:flex;align-items:center;justify-content:space-between}
+.topnav .logo{color:var(--accent1);font-weight:700;text-decoration:none;font-size:18px}
+.topnav .links{display:flex;gap:18px}
+.topnav .links a{color:var(--muted);text-decoration:none;font-weight:600}
+h1{font-size:42px;margin:6px 0 6px;letter-spacing:-0.02em}
+.hero{padding:60px 0 40px}
+.hero-inner{display:flex;align-items:center;gap:28px}
+.hero .avatar{width:120px;height:120px;margin:0;filter:drop-shadow(0 8px 20px rgba(10,10,20,0.6))}
+.hero-copy{max-width:620px}
+.hero-copy h1{font-size:44px;margin:0 0 8px}
 h1{font-size:42px;margin:6px 0 6px;letter-spacing:-0.02em}
 .lead{color:var(--muted);font-size:18px;margin:0 0 14px}
 .cta a{color:var(--accent1);text-decoration:none;font-weight:600}
 .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:20px;border-radius:12px;margin:18px 0;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.weather-card{max-width:360px}
+.weather-content{display:flex;align-items:center;gap:12px}
+.weather-emoji{font-size:40px;flex:0 0 56px}
+.weather-details .temp{font-size:20px;font-weight:700}
+.weather-details .cond{color:var(--muted);font-size:14px}
+.weather-note{margin-top:10px;color:var(--muted);font-size:13px}
+
+/* Footer weather compact */
+.footer .footer-weather .weather-card{background:transparent;box-shadow:none;padding:0}
+.footer .weather-emoji{font-size:28px;flex:0 0 42px}
+.footer .weather-details .temp{font-size:16px}
+.footer .weather-note{margin-top:6px;font-size:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
 .card h3{margin:0 0 6px}
 .footer{padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
 a{color:inherit}
 @media(min-width:900px){
-  .hero{display:flex;align-items:center;gap:28px;text-align:left;padding:80px 0}
-  .hero .container{display:flex;align-items:center;gap:28px}
+  .hero{padding:80px 0}
+  .hero-inner{align-items:center}
   .avatar{flex:0 0 120px}
-  .topnav{justify-content:flex-start}
 }
