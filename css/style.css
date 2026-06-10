@@ -1,17 +1,17 @@
 :root{
-  --bg:#0f1724;
-  --card:#0b1220;
-  --accent1:#ff9a9e;
-  --accent2:#fad0c4;
-  --muted: #9aa4b2;
-  --glass: rgba(255,255,255,0.04);
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --accent1: #0b5fff;
+  --accent2: #ffd6a5;
+  --muted: #4b5563;
+  --glass: rgba(2,6,23,0.02);
   --radius:14px;
 }
 *{box-sizing:border-box}
 body{
   margin:0; font-family: Inter, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(180deg,#071026 0%, #071827 50%);
-  color:#e6eef6; -webkit-font-smoothing:antialiased;
+  background: var(--bg);
+  color:#071332; -webkit-font-smoothing:antialiased;
 }
 .container{max-width:900px;margin:0 auto;padding:48px 20px}
 .topnav{background:transparent;padding:18px 0}
@@ -22,13 +22,15 @@ body{
 h1{font-size:42px;margin:6px 0 6px;letter-spacing:-0.02em}
 .hero{padding:60px 0 40px}
 .hero-inner{display:flex;align-items:center;gap:28px}
-.hero .avatar{width:120px;height:120px;margin:0;filter:drop-shadow(0 8px 20px rgba(10,10,20,0.6))}
+.hero .avatar{width:120px;height:120px;margin:0;filter:drop-shadow(0 8px 20px rgba(2,6,23,0.06))}
 .hero-copy{max-width:620px}
 .hero-copy h1{font-size:44px;margin:0 0 8px}
 h1{font-size:42px;margin:6px 0 6px;letter-spacing:-0.02em}
 .lead{color:var(--muted);font-size:18px;margin:0 0 14px}
 .cta a{color:var(--accent1);text-decoration:none;font-weight:600}
-.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:20px;border-radius:12px;margin:18px 0;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.card{background:var(--card);padding:20px;border-radius:12px;margin:18px 0;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+.card-icon{margin-bottom:8px;color:var(--accent1);display:flex;align-items:center}
+.card h3{font-family:Poppins, Inter, system-ui, sans-serif}
 .weather-card{max-width:360px}
 .weather-content{display:flex;align-items:center;gap:12px}
 .weather-emoji{font-size:40px;flex:0 0 56px}
